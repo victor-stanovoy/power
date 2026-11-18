@@ -1,12 +1,6 @@
-/*
-  PRIVACY GATE CONFIGURATION
-  This is a convenience gate only, NOT secure authentication.
-  GitHub Pages publishes this file to every visitor. Do not use a real,
-  sensitive password here or place confidential material in this repository.
-  For genuine protection, put the site behind Cloudflare Access or another
-  server-side identity-aware access service.
-*/
+// Supabase publishable credentials. These are designed for browser use;
+// database access is protected by Row Level Security policies.
 window.SITE_CONFIG = {
-  // Replace this phrase before publishing. This is visible in the source.
-  sharedPassphrase: "CHANGE-THIS-PHRASE"
+  supabaseUrl: "https://szxyyvxnhecquulzorqo.supabase.co",
+  supabaseKey: "sb_publishable_2LTRSdkQBnAUJ-gN70qAbQ_7Q_7bd9h"
 };
