@@ -5,3 +5,57 @@
 .masthead{background:var(--forest);color:#f5f0e5;padding:40px 42px;position:relative;overflow:hidden;border-bottom:3px solid var(--gold)}.masthead:after{content:"A·L";position:absolute;right:34px;bottom:-58px;color:#ffffff09;font:150px "Libre Baskerville",serif}.masthead .eyebrow{color:#d6bd81}.masthead h1{max-width:650px;font-size:38px}.masthead p{max-width:650px;color:#c7cbbf;margin-bottom:0}.mast-meta{margin-top:24px;font-size:9px;letter-spacing:1.6px;color:#d9cba9}.section-head{display:flex;justify-content:space-between;align-items:end;margin:34px 0 15px}.section-head p{margin:0;color:var(--muted);font-size:12px}.text-link{background:none;border:0;color:var(--wine);font-size:10px;font-weight:700;letter-spacing:.7px}.stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.stat{background:var(--white);border:1px solid var(--line);padding:20px;box-shadow:var(--shadow)}.stat .number{font:27px "Libre Baskerville",serif;color:var(--gold)}.stat h3{font-size:14px;margin:11px 0 4px}.stat p{font-size:11px;color:var(--muted);margin:0}.two-col{display:grid;grid-template-columns:1.3fr 1fr;gap:15px;margin-top:16px}.panel,.content-card{background:var(--white);border:1px solid var(--line);padding:22px;box-shadow:var(--shadow)}.panel h3{margin-bottom:13px}.list-row,.register-row{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:13px 0;border-top:1px solid var(--line);font-size:12px}.list-row:first-of-type{border-top:0}.tag{font-size:9px;text-transform:uppercase;letter-spacing:1px;color:#776644;background:#eee8d9;padding:5px 7px;white-space:nowrap}.page-intro{margin-bottom:27px}.page-intro p{max-width:720px;color:var(--muted)}.discipline-list,.card-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.discipline,.course-card,.resource-card,.lesson-card{background:var(--white);border:1px solid var(--line);padding:23px;box-shadow:var(--shadow)}.roman{font:22px "Libre Baskerville",serif;color:var(--gold);margin-bottom:12px}.discipline ul{padding-left:17px;color:#625f55;font-size:12px;line-height:2}.lesson-meta{font-size:9px;color:#98865e;letter-spacing:1.3px;text-transform:uppercase}.course-card h3,.resource-card h3,.lesson-card h3{margin:12px 0 7px}.course-card p,.resource-card p,.lesson-card p{font-size:12px;color:var(--muted)}.lesson-card{margin-bottom:12px}.lesson-card button,.action-button{background:var(--forest);color:white;border:0;padding:10px 14px;font-size:10px;font-weight:700}.lesson-body{border-top:1px solid var(--line);margin-top:18px;padding-top:15px;font:13px/1.9 "Libre Baskerville",serif}.lesson-body p{font:13px/1.9 "Libre Baskerville",serif;color:#49483e}.lesson-body li{margin:7px 0}.lesson-actions{display:flex;gap:9px;align-items:center;margin-top:15px}.prompt{background:#f0ebdf;border-left:2px solid var(--gold);padding:14px 17px;margin:15px 0;color:#5f5a4c}.field{margin:12px 0}.field textarea{min-height:105px;resize:vertical}.field-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.admin-section{margin:22px 0}.admin-section h3{border-bottom:1px solid var(--line);padding-bottom:11px}.admin-form{background:#f7f4ec;border:1px solid var(--line);padding:19px;margin:12px 0}.admin-form .button{margin-top:10px}.resource-card a{color:var(--wine);font-weight:700;font-size:11px}.empty{padding:24px;text-align:center;color:var(--muted);background:var(--white);border:1px dashed #d4ccbc}.progress-track{height:5px;background:#e5dfd1;margin-top:9px}.progress-fill{height:5px;background:var(--gold)}.register-row{background:var(--white);border:1px solid var(--line);padding:16px 19px;margin:7px 0}.register-row strong{font:14px "Libre Baskerville",serif}.register-row small{display:block;color:var(--muted);margin-top:5px}
 @media(max-width:950px){.sidebar{width:220px}.main{margin-left:220px}.content{padding:30px 25px}.topbar{padding:0 25px}.stat-grid{grid-template-columns:1fr 1fr}.two-col{grid-template-columns:1fr}}
 @media(max-width:650px){.sidebar{position:relative;width:100%;height:auto;padding:12px}.brand{padding:0 5px 12px}.side-label,.sidebar-bottom{display:none}#app .sidebar nav{display:flex;overflow:auto;gap:3px}.nav-item{white-space:nowrap;width:auto;padding:9px}.nav-item i{display:none}.main{margin:0}.topbar{height:62px;padding:0 16px}.topbar .eyebrow{display:none}.content{padding:22px 15px 40px}.masthead{padding:27px 22px}.masthead h1{font-size:29px}.stat-grid,.discipline-list,.card-grid,.field-grid{grid-template-columns:1fr}.footer{padding:15px;gap:10px;flex-wrap:wrap}.date{display:none}.auth-panel{padding:32px 25px}.auth-panel h1{font-size:33px}}
+
+
+/* A more formal, classical visual language */
+:root{--forest:#18251f;--forest2:#26372d;--paper:#f1ecdf;--white:#fbf8ef;--ink:#29271f;--muted:#777061;--gold:#b49a65;--wine:#713c40;--line:#dcd3c1;--soft:#e9e1d0;--shadow:0 10px 28px #29251a0a}
+body{font-family:"EB Garamond",Georgia,serif;font-size:16px;background:var(--paper);letter-spacing:.01em}
+h1,h2,h3,h4,.serif{font-family:"Libre Baskerville",Georgia,serif}
+p{line-height:1.8}
+.eyebrow,.side-label,.brand small,.mast-meta,.lesson-meta,.tag,.top-title,.footer,.button,.text-link,.nav-item,.auth-tabs button,.auth-panel label,.field label{font-family:"Cinzel",Georgia,serif;letter-spacing:.09em}
+.eyebrow{font-size:9px}
+.sidebar{background:linear-gradient(180deg,#1b2a22 0%,#17221c 100%);border-right:1px solid #9b8557}
+.brand{padding-bottom:38px;border-bottom:1px solid #ffffff1c;margin-bottom:26px}
+.brand-crest{font-family:"Cinzel",serif;border-color:#bba16b;color:#dfc98e}
+.brand strong{font-family:"Libre Baskerville",serif;letter-spacing:-.02em}
+.nav-item{font-size:10px;padding:14px 12px}
+.nav-item.active{background:#ffffff10;box-shadow:inset 2px 0 #c5a86b}
+.main{background:linear-gradient(90deg,#f1ecdf 0%,#f5f1e7 50%,#f1ecdf 100%)}
+.topbar{background:#f8f5ec;border-bottom-color:#d7cdb9}
+.topbar .eyebrow{color:#8d7548}
+.content{max-width:1240px}
+.masthead{background:linear-gradient(115deg,#1a2b22 0%,#26382d 100%);padding:48px 50px;border-bottom:4px double var(--gold);outline:1px solid #d5c49a;outline-offset:-10px}
+.masthead h1{font-size:42px;letter-spacing:-.035em}
+.masthead p{font:18px/1.75 "EB Garamond",Georgia,serif;max-width:620px;color:#d7d8cc}
+.masthead:after{font-family:"Cinzel",serif;font-size:165px;right:42px;bottom:-64px}
+.section-head{border-bottom:1px solid var(--line);padding-bottom:14px}
+.section-head h2,.page-intro h2{letter-spacing:-.03em}
+.stat,.panel,.content-card,.discipline,.resource-card,.lesson-card{background:#fcfaf4;border-color:#ded5c3;box-shadow:0 5px 20px #342d1c08}
+.stat{border-top:2px solid #b59a64}
+.stat .number{font-family:"Libre Baskerville",serif;color:#967a46}
+.stat h3{font-size:13px}
+.page-intro{padding-bottom:18px;border-bottom:1px solid var(--line)}
+.page-intro .eyebrow{color:#8c754b}
+.page-intro p{font:18px/1.7 "EB Garamond",Georgia,serif}
+.discipline{border-top:2px solid #b59a64}
+.discipline h3,.resource-card h3,.lesson-card h3{font-size:16px}
+.discipline p,.discipline li,.resource-card p,.lesson-card p{font:16px/1.65 "EB Garamond",Georgia,serif}
+.roman{font-family:"Cinzel",serif;font-size:18px}
+.admin-section h3{font-size:16px;color:#493c2a;border-bottom:1px solid #cbbd9f}
+.admin-form{background:#f5f0e5;border-color:#d8cdb7}
+.admin-form input,.admin-form textarea,.admin-form select{font-family:"EB Garamond",Georgia,serif;font-size:17px}
+.button.primary,.lesson-card button,.action-button{background:#1d2d24;border:1px solid #9e8758}
+.button.primary:hover,.lesson-card button:hover,.action-button:hover{background:#713c40}
+.resource-card a{font-family:"Cinzel",serif;font-size:9px;letter-spacing:.06em}
+.footer{font-size:8px;color:#8b806b}
+.auth-screen{background:radial-gradient(ellipse at 50% 12%,#344538 0,#1e2d23 52%,#151e18 100%)}
+.auth-panel{background:#faf7ee;border:1px solid #bba574;outline:1px solid #bba574;outline-offset:5px;box-shadow:0 30px 90px #0006}
+.auth-panel .eyebrow{color:#927a4b}
+.auth-panel h1{font-family:"Libre Baskerville",serif;font-size:36px}
+.auth-panel h1 em{color:#713c40}
+.auth-intro{font:17px/1.65 "EB Garamond",Georgia,serif}
+.auth-panel label{font-size:9px}
+.auth-panel input{font-family:"EB Garamond",Georgia,serif;font-size:17px}
+.auth-tabs button{font-size:9px}
+.auth-screen>footer{font-family:"Cinzel",serif;font-size:8px;letter-spacing:2px}
+@media(max-width:650px){.masthead{padding:32px 26px}.masthead h1{font-size:31px}.masthead p{font-size:16px}}
