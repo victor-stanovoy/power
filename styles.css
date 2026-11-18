@@ -59,3 +59,11 @@ p{line-height:1.8}
 .auth-tabs button{font-size:9px}
 .auth-screen>footer{font-family:"Cinzel",serif;font-size:8px;letter-spacing:2px}
 @media(max-width:650px){.masthead{padding:32px 26px}.masthead h1{font-size:31px}.masthead p{font-size:16px}}
+
+.auth-forgot{display:block;margin:12px auto 0;padding:6px 0;border:0;background:transparent;color:var(--wine);font-size:11px;text-decoration:underline;text-underline-offset:3px}
+.auth-forgot:disabled{opacity:.55;cursor:wait}
+.message[data-kind="success"]{color:#345c42;background:#edf3eb;border-left:3px solid #6f8d70;padding:10px 12px;line-height:1.6}
+.message[data-kind="info"]{color:#625b49}
+.message[data-kind="error"]{color:#783d3e;background:#f7eeee;border-left:3px solid #9a5a5b;padding:10px 12px;line-height:1.6}
+.auth-notice{padding:14px 18px;margin:0 0 24px;background:#edf3eb;border-left:3px solid #6f8d70;color:#345c42;font-size:13px;line-height:1.6}
+@media(max-width:520px){.auth-panel{padding:34px 24px}.auth-panel h1{font-size:33px}}
