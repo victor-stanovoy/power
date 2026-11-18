@@ -1,6 +1,6 @@
-// Supabase publishable credentials. These are designed for browser use;
-// database access is protected by Row Level Security policies.
+// Supabase publishable credentials for the dedicated Power project.
+// The publishable key is intended for browser use; Row Level Security protects all data.
 window.SITE_CONFIG = {
-  supabaseUrl: "https://szxyyvxnhecquulzorqo.supabase.co",
-  supabaseKey: "sb_publishable_2LTRSdkQBnAUJ-gN70qAbQ_7Q_7bd9h"
+  supabaseUrl: "https://kjpkswozfvbjntzdvtof.supabase.co",
+  supabaseKey: "sb_publishable_IfzywxpvVf25udDyMYLX0A_gYUQF16v"
 };
