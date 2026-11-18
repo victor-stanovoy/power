@@ -23,6 +23,12 @@
    <button class="auth-forgot" type="button" id="forgot-password">Forgot your password?</button>
    <p id="auth-message" class="message" role="status" aria-live="polite"></p>
   </form>
+  <form id="reset-form" class="hidden" aria-label="Choose a new password">
+   <label for="reset-password-input">New password</label>
+   <input id="reset-password-input" type="password" minlength="8" autocomplete="new-password" required placeholder="At least 8 characters">
+   <button class="button primary full" id="reset-submit" type="submit">Save new password <span>→</span></button>
+   <button class="auth-forgot" id="reset-cancel" type="button">Return to sign in</button>
+  </form>
   <p class="fine-print">Membership is by invitation. Each member maintains an individual account and private study record.</p>
  </div>
  <footer>THE ART OF LEADERSHIP <span>·</span> EST. 2026</footer>
