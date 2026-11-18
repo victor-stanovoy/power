@@ -1,69 +1,52 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#202923">
-  <title>The Art of Leadership</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#20251f">
+<title>The Art of Leadership</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <section id="gate" class="gate">
-    <div class="gate-card">
-      <div class="monogram">AL</div>
-      <p class="eyebrow">PRIVATE STUDY PROGRAMME</p>
-      <h1>The Art of<br>Leadership</h1>
-      <p class="muted">Power · Influence · Strategy · Governance</p>
-      <form id="login-form">
-        <label for="password">Shared access phrase</label>
-        <input id="password" type="password" autocomplete="current-password" placeholder="Enter access phrase" required>
-        <button class="button primary full" type="submit">Enter the institute <span>→</span></button>
-        <p id="login-error" class="error" aria-live="polite"></p>
-      </form>
-      <p class="gate-note">A private learning space for its members.</p>
-    </div>
-    <p class="gate-footer">THE ART OF LEADERSHIP · EST. 2026</p>
-  </section>
-
-  <div id="app" class="app hidden">
-    <aside class="sidebar">
-      <a class="brand" href="#" data-page="dashboard">
-        <span class="brand-mark">AL</span>
-        <span><strong>The Art of Leadership</strong><small>PRIVATE INSTITUTE</small></span>
-      </a>
-      <div class="side-label">STUDY</div>
-      <nav id="navigation">
-        <button class="nav-item active" data-page="dashboard"><span>⌂</span> Overview</button>
-        <button class="nav-item" data-page="curriculum"><span>▤</span> Curriculum</button>
-        <button class="nav-item" data-page="lessons"><span>✎</span> Lessons</button>
-        <button class="nav-item" data-page="case-studies"><span>◈</span> Case studies</button>
-        <button class="nav-item" data-page="assignments"><span>☷</span> Assignments</button>
-        <button class="nav-item" data-page="library"><span>▥</span> Library</button>
-      </nav>
-      <div class="side-label lower">YOUR RECORD</div>
-      <nav>
-        <button class="nav-item" data-page="register"><span>▧</span> Study register</button>
-      </nav>
-      <div class="sidebar-bottom">
-        <div class="status-dot"></div>
-        <div><strong>Private study</strong><small>Continuous programme</small></div>
-        <button id="logout" class="logout" title="Leave the site">↗</button>
-      </div>
-    </aside>
-
-    <main class="main">
-      <header class="topbar">
-        <div><span class="eyebrow">PRIVATE INSTITUTE OF LEADERSHIP STUDIES</span><div class="top-title" id="page-kicker">YOUR STUDY DESK</div></div>
-        <div class="top-right"><span class="date" id="today"></span><span class="avatar">AL</span></div>
-      </header>
-      <div id="content" class="content"></div>
-      <footer class="footer"><span>THE ART OF LEADERSHIP</span><span>Continuous study. Considered leadership.</span></footer>
-    </main>
-  </div>
-  <script src="config.js"></script>
-  <script src="app.js"></script>
-</body>
-</html>
+<section id="auth-screen" class="auth-screen">
+ <div class="auth-panel">
+  <div class="crest">A<span>·</span>L</div><p class="eyebrow">AN INDEPENDENT INSTITUTE OF STUDY</p>
+  <h1>The Art of<br><em>Leadership</em></h1>
+  <p class="auth-intro">A continuing education in power, judgement, strategy and the responsibilities of office.</p>
+  <div class="auth-tabs"><button class="active" data-auth-tab="signin">Sign in</button><button data-auth-tab="signup">Create an account</button></div>
+  <form id="auth-form">
+   <label for="auth-name" id="name-label" class="hidden">Full name</label><input id="auth-name" class="hidden" autocomplete="name" placeholder="Your name">
+   <label for="auth-email">Email address</label><input id="auth-email" type="email" autocomplete="email" required placeholder="name@example.com">
+   <label for="auth-password">Password</label><input id="auth-password" type="password" autocomplete="current-password" minlength="8" required placeholder="At least 8 characters">
+   <button class="button primary full" type="submit" id="auth-submit">Enter the institute <span>→</span></button>
+   <p id="auth-message" class="message" aria-live="polite"></p>
+  </form>
+  <p class="fine-print">Membership is by invitation. Your account and study record are private.</p>
+ </div>
+ <footer>THE ART OF LEADERSHIP <span>·</span> EST. 2026</footer>
+</section>
+<div id="app" class="app hidden">
+ <aside class="sidebar">
+  <a class="brand" href="#" data-page="overview"><span class="brand-crest">A·L</span><span><strong>The Art of Leadership</strong><small>INSTITUTE OF STUDY</small></span></a>
+  <div class="side-label">THE INSTITUTE</div><nav>
+   <button class="nav-item active" data-page="overview"><i>⌂</i> Overview</button>
+   <button class="nav-item" data-page="curriculum"><i>Ⅰ</i> Curriculum</button>
+   <button class="nav-item" data-page="courses"><i>▤</i> Courses & lessons</button>
+   <button class="nav-item" data-page="resources"><i>▧</i> Library & resources</button>
+   <button class="nav-item" data-page="cases"><i>◈</i> Case studies</button>
+   <button class="nav-item" data-page="register"><i>▥</i> Study register</button>
+  </nav>
+  <div class="side-label admin-label hidden" id="admin-label">THE CHANCERY</div><nav id="admin-nav" class="hidden"><button class="nav-item" data-page="admin"><i>⚙</i> Administration</button></nav>
+  <div class="sidebar-bottom"><span class="online-dot"></span><div><strong id="member-name">Member</strong><small id="member-role">Institute member</small></div><button id="logout" class="logout" title="Sign out">↗</button></div>
+ </aside>
+ <main class="main">
+  <header class="topbar"><div><span class="eyebrow">THE ART OF LEADERSHIP · PRIVATE INSTITUTE</span><div class="top-title" id="page-kicker">THE STUDY DESK</div></div><div class="top-right"><span class="date" id="today"></span><span class="avatar" id="avatar">AL</span></div></header>
+  <div id="content" class="content"><div class="loading">Preparing your study desk…</div></div>
+  <footer class="footer"><span>THE ART OF LEADERSHIP</span><span>Continuous study · Considered leadership</span></footer>
+ </main>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script>
+<script src="config.js"></script><script src="app.js"></script>
+</body></html>
